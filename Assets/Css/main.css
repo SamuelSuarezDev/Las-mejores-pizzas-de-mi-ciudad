@@ -1,0 +1,126 @@
+table td {
+  background-color: white;
+}
+td img {
+  width: 20px;
+}
+.map {
+  width: 30px;
+  margin-top: 300px;
+}
+
+.container {
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@font-face {
+  font-family: nombreDeMiFuente;
+  src: url();
+}
+.content {
+  max-width: 960px;
+  max-height: 500px;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  padding: 1.8em;
+  overflow: scroll;
+}
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.table {
+  width: 100%;
+}
+.table td,
+.table th {
+  padding: 1em;
+  text-align: left;
+}
+.fa-star {
+  color: #e3b740;
+}
+.tittle-item {
+  font-size: 2em;
+  border-bottom: solid 2px;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.address {
+  font-weight: bold;
+  color: #7f00ff;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+.position {
+  background: #7f00ff;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background: #e100ff;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Maven Pro", sans-serif;
+}
+a:hover {
+  opacity: 0.6;
+}
+a td:focus {
+  color: #e100ff;
+}
+.main-image {
+  float: left;
+  width: 350px;
+  height: 200px;
+}
+
+@media (min-width: 900px) {
+  .content {
+    padding: 0.1em;
+  }
+  i {
+    width: 15px;
+  }
+}
+
+@media print (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
