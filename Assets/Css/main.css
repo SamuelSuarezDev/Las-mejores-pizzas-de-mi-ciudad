@@ -1,4 +1,4 @@
-table td {
+table .no {
   background-color: white;
 }
 td img {
@@ -32,8 +32,9 @@ td img {
 }
 .content {
   max-width: 960px;
-  max-height: 500px;
-  height: 80vh;
+  max-height: 960px;
+  height: 100%;
+width: 90%;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
@@ -60,7 +61,7 @@ td img {
   text-align: left;
 }
 .fa-star {
-  color: #e3b740;
+  color: #d4c366;
 }
 .tittle-item {
   font-size: 2em;
@@ -110,16 +111,27 @@ a td:focus {
   height: 200px;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 500px) {
   .content {
-    padding: 0.1em;
+    padding: 1em;
   }
-  i {
-    width: 15px;
+  td {
+    display: block;
+    width: 100%;
+  }
+  td:nth-of-type(1) {
+    color: black;
+    font-size: 30px;
+  }
+  .pintar{
+    background-color: #e06bed;
+  }
+  th {
+    display: none;
   }
 }
 
-@media print (min-height: 550px) {
+@media (min-height: 550px) {
   .content {
     height: 500px;
   }
